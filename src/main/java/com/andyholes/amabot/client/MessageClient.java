@@ -11,12 +11,11 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+
 public class MessageClient {
 
     @Value("${api_key}")
     private String apiKey;
-    @Value("${org_key}")
-    private String org;
 
     @Bean
     public String getResponse(String content) throws URISyntaxException, IOException, InterruptedException {
